@@ -21,12 +21,7 @@ namespace Comp229_TeamAssign
                 case "Home":
                     home.Attributes.Add("class", "active");
                     break;
-                case "About":
-                    about.Attributes.Add("class", "active");
-                    break;
-                case "Contact":
-                    contact.Attributes.Add("class", "active");
-                    break;
+                
 
             }
         }

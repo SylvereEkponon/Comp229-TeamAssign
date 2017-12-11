@@ -1,9 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Comp229_TeamAssign.Site" %>
 
 <!DOCTYPE html>
-<!--Name: Sylvere Ekponon -->
-<!--Student ID: 300936445 -->
-<!--Date: September 16, 2017 -->
+
 <!--site.Master file -->
 
 <html lang="en">
