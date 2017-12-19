@@ -1,5 +1,5 @@
 
-?USE [MusicStore]
+USE [MusicStore]
 GO
 ALTER TABLE [dbo].[Album] DROP CONSTRAINT [FK__Album__ArtistId__276EDEB3]
 GO
