@@ -116,6 +116,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="MusicStore\Order.aspx" />
+    <Content Include="MusicStore\ShoppingCart.aspx" />
     <Content Include="MusicStore\UpdateOrder.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -188,6 +189,13 @@
     </Compile>
     <Compile Include="MusicStore\Order.aspx.designer.cs">
       <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MusicStore\ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MusicStore\ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="MusicStore\UpdateOrder.aspx.cs">
       <DependentUpon>UpdateOrder.aspx</DependentUpon>
