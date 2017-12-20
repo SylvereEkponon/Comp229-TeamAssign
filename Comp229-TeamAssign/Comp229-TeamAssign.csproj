@@ -115,6 +115,7 @@
     <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Images\placeholder.gif" />
     <Content Include="MusicStore\Order.aspx" />
     <Content Include="MusicStore\ShoppingCart.aspx" />
     <Content Include="MusicStore\UpdateOrder.aspx" />
@@ -220,7 +221,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

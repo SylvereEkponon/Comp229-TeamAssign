@@ -15,7 +15,38 @@ namespace Comp229_TeamAssign
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            getMusicItem();
+        }
+        /// <summary>
+        /// This Method gets the products data from the DataBase
+        /// </summary>
+        /*private void getMusicItem()
+        {
+            using (MusicStoreContext dataSource = new MusicStoreContext()) 
+            {
+                //Query the Album Table using EF and LINQ
+                var albums = (from allAlbums in dataSource.Albums
+                                select allAlbums);
+                // bind the result to the Album GridView
+                MusicGridView.DataSource = albums.ToList();
 
+                ///MusicGridView.DataSource = albums.AsQueryable().OrderBy(SortString).ToList();
+                MusicGridView.DataBind();
+            }
+        }*/
+        private void getMusicItem()
+        {
+            using (MusicStoreContext dataSource = new MusicStoreContext())
+            {
+                //Query the Album Table using EF and LINQ
+                var albums = (from allAlbums in dataSource.Albums
+                              select allAlbums);
+                // bind the result to the Album GridView
+                DataList.DataSource = albums.ToList();
+
+                ///MusicGridView.DataSource = albums.AsQueryable().OrderBy(SortString).ToList();
+                DataList.DataBind();
+            }
         }
 
 

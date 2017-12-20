@@ -46,6 +46,10 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li id="home" runat="server"><a href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+                            <li id="order" runat="server"><a href="~/MusicStore/Order.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Order</a></li>
+                            <li id="Li2" runat="server"><a href="~/MusicStore/Update.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Update</a></li>
+                            <li id="Li1" runat="server"><a href="~/AboutUs.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> AboutUs</a></li>
+                            <li id="Li3" runat="server"><a href="~/ContactUs.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> ContactUs</a></li>
                           
                         </ul>
                     </div>
