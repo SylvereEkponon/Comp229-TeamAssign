@@ -116,6 +116,9 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Images\placeholder.gif" />
+    <Content Include="Images\BillyCobham.jpg" />
+    <Content Include="Images\BlackSabbath.jpg" />
+    <Content Include="Images\JustinBiber.jpg" />
     <Content Include="MusicStore\Order.aspx" />
     <Content Include="MusicStore\ShoppingCart.aspx" />
     <Content Include="MusicStore\UpdateOrder.aspx" />
