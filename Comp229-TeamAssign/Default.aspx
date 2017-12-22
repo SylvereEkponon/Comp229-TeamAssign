@@ -53,7 +53,7 @@
   </div>
 </div>
 
-     <%-- ASP Anu --%>
+     <%-- ASP Anu and Sylver --%>
     <%-- Comment
     <asp:GridView ID="MusicGridView" runat="server"  AutoGenerateColumns="false">
         <Columns>
@@ -62,8 +62,10 @@
         </Columns>
     </asp:GridView>
         
-        Comment --%>
+        
     <div class="container">
+
+    
     <asp:DataList ID="DataList" runat="server" RepeatColumns="4" CellPadding="2" CellSpacing="4" RepeatDirection="Horizontal" style="padding-left: 5px" >
         <ItemTemplate >
            
@@ -76,6 +78,20 @@
         </ItemTemplate>
        <ItemStyle BorderWidth="10"  ></ItemStyle>
          
-    </asp:DataList>
+    </asp:DataList>Comment --%>
+    <div class="container">
+        <asp:Repeater ID="AlbamDataList" runat="server"   >
+        <ItemTemplate >
+           
+         
+            <asp:Literal ID="extraDetailsLiteral" runat="server" EnableViewState="false" />
+            <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("AlbumArtUrl") %>' Height="280px" Width="300px" />&nbsp&nbsp<br />
+            Title: <strong><%#Eval("Title")%></strong> 
+         
+            
+        </ItemTemplate>
+       
+
+        </asp:Repeater>
         </div>
 </asp:Content>

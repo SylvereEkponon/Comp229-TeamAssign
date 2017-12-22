@@ -42,10 +42,10 @@ namespace Comp229_TeamAssign
                 var albums = (from allAlbums in dataSource.Albums
                               select allAlbums);
                 // bind the result to the Album GridView
-                DataList.DataSource = albums.ToList();
+                AlbamDataList.DataSource = albums.ToList();
 
                 ///MusicGridView.DataSource = albums.AsQueryable().OrderBy(SortString).ToList();
-                DataList.DataBind();
+                AlbamDataList.DataBind();
             }
         }
 
