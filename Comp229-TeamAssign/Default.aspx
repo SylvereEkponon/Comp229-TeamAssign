@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- HTML -->
    <div class="container">
-  <h2>Carousel Example</h2>
+  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -80,6 +80,7 @@
          
     </asp:DataList>Comment --%>
     <div class="container">
+         
         <asp:Repeater ID="AlbamDataList" runat="server"   >
         <ItemTemplate >
            

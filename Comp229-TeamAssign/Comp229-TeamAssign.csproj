@@ -119,6 +119,7 @@
     <Content Include="Images\BillyCobham.jpg" />
     <Content Include="Images\BlackSabbath.jpg" />
     <Content Include="Images\JustinBiber.jpg" />
+    <Content Include="MusicStore\AddAlbum.aspx" />
     <Content Include="MusicStore\Order.aspx" />
     <Content Include="MusicStore\ShoppingCart.aspx" />
     <Content Include="MusicStore\UpdateOrder.aspx" />
@@ -187,6 +188,13 @@
     <Compile Include="Models\MusicStoreContext.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
+    <Compile Include="MusicStore\AddAlbum.aspx.cs">
+      <DependentUpon>AddAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MusicStore\AddAlbum.aspx.designer.cs">
+      <DependentUpon>AddAlbum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MusicStore\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
