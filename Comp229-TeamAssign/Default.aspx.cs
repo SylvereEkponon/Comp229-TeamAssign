@@ -15,7 +15,7 @@ namespace Comp229_TeamAssign
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            getMusicItem();
+            //getMusicItem();
         }
         /// <summary>
         /// This Method gets the products data from the DataBase
