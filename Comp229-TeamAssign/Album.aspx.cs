@@ -13,9 +13,13 @@ namespace Comp229_TeamAssign
 {
     public partial class Default : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-            //getMusicItem();
+            if (!IsPostBack)
+            {
+                getMusicItem();
+            }
         }
         /// <summary>
         /// This Method gets the products data from the DataBase
@@ -36,10 +40,12 @@ namespace Comp229_TeamAssign
         }*/
         private void getMusicItem()
         {
+            int GenreId = Convert.ToInt32(Request.QueryString["GenreId"]);
+
             using (MusicStoreContext dataSource = new MusicStoreContext())
             {
                 //Query the Album Table using EF and LINQ
-                var albums = (from allAlbums in dataSource.Albums
+                var albums = (from allAlbums in dataSource.Albums where allAlbums.GenreId==GenreId
                               select allAlbums);
                 // bind the result to the Album GridView
                 AlbamDataList.DataSource = albums.ToList();
