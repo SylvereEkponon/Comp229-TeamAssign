@@ -58,6 +58,13 @@
                 <!-- /.container-fluid -->
             </nav>
         </header>
+        <aside id="side">
+            <asp:GridView ID="GenreGridView" Visible="true" runat="server" AutoGenerateColumns="false" CssClass="table table-striped table-bordered table-hover" Width="20px">
+                <Columns>
+                    <asp:HyperLinkField HeaderText="Genre" DataTextField="Name" runat="server" DataNavigateUrlFields="GenreId" DataNavigateUrlFormatString="Album.aspx?GenreId={0}" />
+                </Columns>
+            </asp:GridView>
+        </aside>
         <div role="main">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
