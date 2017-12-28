@@ -12,21 +12,43 @@ namespace Comp229_TeamAssign
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            SetActivePage();
+
             if (!IsPostBack)
             {
                 this.BindGenre();
             }
-            SetActivePage();
+            
         }
 
         private void SetActivePage()
         {
             switch (Page.Title)
             {
-                case "Home":
+                case "home":
                     home.Attributes.Add("class", "active");
+                    Page.Title = string.Format("Music Store :: Home :: {0:d}", DateTime.Now);
                     break;
-                
+                case "order":
+                    order.Attributes.Add("class", "active");
+                    break;
+                case "update":
+                    update.Attributes.Add("class", "active");
+                    break;
+                case "about":
+                    about.Attributes.Add("class", "active");
+                    break;
+                case "contact":
+                    contact.Attributes.Add("class", "active");
+                    break;
+                case "register":
+                    register.Attributes.Add("class", "active");
+                    break;
+                case "login":
+                    login.Attributes.Add("class", "active");
+                    break;
+
+
 
             }
         }

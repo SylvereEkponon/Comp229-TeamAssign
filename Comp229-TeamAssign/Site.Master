@@ -36,7 +36,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#">
-                            MusicStore
+                           <i class="fa fa-music" aria-hidden="true"></i> MusicStore
                         </a>
                     </div>
 
@@ -46,10 +46,14 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li id="home" runat="server"><a href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
-                            <li id="order" runat="server"><a href="~/MusicStore/Order.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Order</a></li>
-                            <li id="Li2" runat="server"><a href="~/MusicStore/Update.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Update</a></li>
-                            <li id="Li1" runat="server"><a href="~/AboutUs.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> AboutUs</a></li>
-                            <li id="Li3" runat="server"><a href="~/ContactUs.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> ContactUs</a></li>
+                            <li id="order" runat="server"><a href="/MusicStore/Order.aspx"><i class="fa fa-book" aria-hidden="true"></i> Order</a></li>
+                            <li id="update" runat="server"><a href="/MusicStore/UpdateOrder.aspx"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a></li>
+                           
+                            <li id="register" runat="server"><a href="Register.aspx"><i class="fa fa-user-plus fa-lg"></i> Register</a></li>
+                            <li id="login" runat="server"><a href="Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+                            
+                            <li id="about" runat="server"><a href="AboutUs.aspx"><i class="fa fa-info fa-lg"></i> AboutUs</a></li>
+                            <li id="contact" runat="server"><a href="ContactUs.aspx"><i class="fa fa-phone fa-lg"></i> ContactUs</a></li>
                           
                         </ul>
                     </div>
