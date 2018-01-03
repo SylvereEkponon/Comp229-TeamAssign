@@ -45,16 +45,23 @@
 
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li id="home" runat="server"><a href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
-                            <li id="order" runat="server"><a href="/MusicStore/Order.aspx"><i class="fa fa-book" aria-hidden="true"></i> Order</a></li>
-                            <li id="update" runat="server"><a href="/MusicStore/UpdateOrder.aspx"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a></li>
-                           
-                            <li id="register" runat="server"><a href="Register.aspx"><i class="fa fa-user-plus fa-lg"></i> Register</a></li>
-                            <li id="login" runat="server"><a href="Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
-                            
-                            <li id="about" runat="server"><a href="AboutUs.aspx"><i class="fa fa-info fa-lg"></i> AboutUs</a></li>
-                            <li id="contact" runat="server"><a href="ContactUs.aspx"><i class="fa fa-phone fa-lg"></i> ContactUs</a></li>
-                          
+                            <li id="home" runat="server"><a href="/Default.aspx"><i class="fa fa-home fa-lg"></i>Home</a></li>
+
+                            <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
+                                <li id="login" runat="server"><a href="/Login.aspx"><i class="fa fa-sign-in fa-lg"></i>Login</a></li>
+                                <li id="register" runat="server"><a href="/Register.aspx"><i class="fa fa-user-plus fa-lg"></i>Register</a></li>
+                            </asp:PlaceHolder>
+
+                            <asp:PlaceHolder ID="MusicStorePlaceHolder" runat="server">
+                                <li id="menu" runat="server"><a href="/MusicStore/MainMenu.aspx"><i class="fa fa-map-signs fa-lg"></i>Main Menu</a></li>
+                                <li id="students" runat="server"><a href="/MusicStore/Album.aspx"><i class="fa fa-leanpub fa-lg"></i>Albums</a></li>
+                                <li id="courses" runat="server"><a href="/MusicStore/Order.aspx"><i class="fa fa-book fa-lg"></i>Orders</a></li>
+                                <li id="departments" runat="server"><a href="/MusicStore/UpdateOrder.aspx"><i class="fa fa-puzzle-piece fa-lg"></i>Update</a></li>
+                                <li id="logout" runat="server"><a href="/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i>Logout</a></li>
+                            </asp:PlaceHolder>
+
+                            <li id="about" runat="server"><a href="/About.aspx"><i class="fa fa-info fa-lg"></i>About</a></li>
+                            <li id="contact" runat="server"><a href="/Contact.aspx"><i class="fa fa-phone fa-lg"></i>Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->

@@ -6,19 +6,35 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
+
 namespace Comp229_TeamAssign
 {
     public partial class Site : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetActivePage();
-
             if (!IsPostBack)
             {
                 this.BindGenre();
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+
+                    MusicStorePlaceHolder.Visible = true;
+                    PublicPlaceHolder.Visible = false;
+                }
+                else
+                {
+
+                    MusicStorePlaceHolder.Visible = false;
+                    PublicPlaceHolder.Visible = true;
+                }
             }
-            
+            SetActivePage();
+
+
         }
 
         private void SetActivePage()
@@ -28,12 +44,6 @@ namespace Comp229_TeamAssign
                 case "home":
                     home.Attributes.Add("class", "active");
                     Page.Title = string.Format("Music Store :: Home :: {0:d}", DateTime.Now);
-                    break;
-                case "order":
-                    order.Attributes.Add("class", "active");
-                    break;
-                case "update":
-                    update.Attributes.Add("class", "active");
                     break;
                 case "about":
                     about.Attributes.Add("class", "active");
