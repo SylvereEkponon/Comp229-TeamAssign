@@ -1,4 +1,6 @@
 ﻿using Comp229_TeamAssign.Models;
+using System.Web.ModelBinding;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,9 +35,10 @@ namespace Comp229_TeamAssign.MusicStore
                 Album newAlbum = new Album();
                 int AlbumId = 0;
 
-                newAlbum = (from album in dataSource.Albums                            
-                                  select album).FirstOrDefault();
-
+                /* newAlbum = (from album in dataSource.Albums                            
+                                  select album).FirstOrDefault();*/
+                //if()
+                
                 newAlbum.GenreId = Convert.ToInt32(GenreIdTextBox.Text);
                 newAlbum.ArtistId= Convert.ToInt32(ArtistIdTextBox.Text);
                 newAlbum.Title = TitleTextBox.Text;
