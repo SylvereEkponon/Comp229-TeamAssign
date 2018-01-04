@@ -36,5 +36,14 @@ namespace Comp229_TeamAssign
                 AlbamDataList.DataBind();
             }
         }
+
+        protected void AlbamDataList_PagePropertiesChanging(object sender, PagePropertiesChangingEventArgs e)
+        {
+            //set current page startindex, max rows and rebind to false
+            AlbumDataPager.SetPageProperties(e.StartRowIndex, e.MaximumRows, false);
+
+            //rebind List View
+            this.GetAllAlbums();
+        }
     }
 }
