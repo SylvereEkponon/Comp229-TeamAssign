@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Comp229_TeamAssign.Index" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -50,6 +51,12 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-offset-5 col-md-2">
+                <a href="Albums.aspx" class="btn btn-primary btn-group-lg">Load All Albums</a>
+            </div>
         </div>
     </div>
 </asp:Content>
