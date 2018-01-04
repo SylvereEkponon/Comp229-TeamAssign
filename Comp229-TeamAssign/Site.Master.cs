@@ -18,7 +18,7 @@ namespace Comp229_TeamAssign
         {
             if (!IsPostBack)
             {
-                this.BindGenre();
+               
                 if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
 
@@ -63,14 +63,6 @@ namespace Comp229_TeamAssign
             }
         }
 
-        private void BindGenre()
-        {
-            using (MusicStoreContext db = new MusicStoreContext())
-            {
-                var genres = (from allgenre in db.Genres select allgenre);
-                GenreGridView.DataSource = genres.ToList();
-                GenreGridView.DataBind();
-            }
-        }
+
     }
 }
