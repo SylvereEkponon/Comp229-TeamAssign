@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
+    <Content Include="AlbumDetails.aspx" />
     <Content Include="Albums.aspx" />
     <Content Include="App_Data\DataScript.sql" />
     <Content Include="ContactUs.aspx" />
@@ -175,6 +176,13 @@
     </Compile>
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumDetails.aspx.cs">
+      <DependentUpon>AlbumDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlbumDetails.aspx.designer.cs">
+      <DependentUpon>AlbumDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Albums.aspx.cs">
       <DependentUpon>Albums.aspx</DependentUpon>
