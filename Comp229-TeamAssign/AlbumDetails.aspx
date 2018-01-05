@@ -7,24 +7,24 @@
         <div class="row">
             <asp:Repeater ID="AlbumDetailRepeater" runat="server">
                 <ItemTemplate>
-                    <table>
+                    <table style=" border-collapse:separate; border-spacing:10px;">
                         <tr>
-                            <td>
+                            <td style="width:300px">
                                 <asp:Image runat="server" ID="imgAlbum" ImageUrl='<%# Eval("AlbumArtUrl") %>' />
                             </td>
-                            <td>
+                            <td style="width:300px">
                                 <table>
                                     <tr>
-                                        <td><asp:Label runat="server" ID="lblTitle" Text='<%# Eval("Title") %>' /></td>
+                                        <td><h3><asp:Label runat="server" ID="lblTitle" Text='<%# Eval("Title") %>' /></h3></td>
                                     </tr>
                                     <tr>
-                                        <td><asp:Label runat="server" ID="lblGenre" Text='<%# Eval("Genre") %>' /></td>
+                                        <td><h4><asp:Label runat="server" ID="lblGenre" Text='<%# Eval("Genre") %>' /></h4></td>
                                     </tr>
                                     <tr>
-                                        <td><asp:Label runat="server" ID="lblName" Text='<%# Eval("Name") %>' /></td>
+                                        <td><h4><asp:Label runat="server" ID="lblName" Text='<%# Eval("Name") %>' /></h4></td>
                                     </tr>
                                     <tr>
-                                        <td><asp:Label runat="server" ID="lblPrice" Text='<%# Eval("Price") %>' /></td>
+                                        <td><h4>$<asp:Label runat="server" ID="lblPrice" Text='<%# Eval("Price") %>'/></h4></td>
                                     </tr>
                                 </table>
                             </td>
