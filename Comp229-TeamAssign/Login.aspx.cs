@@ -34,7 +34,7 @@ namespace Comp229_TeamAssign
                 authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, userIdentity);
 
                 
-                Response.Redirect("~/MusicStore/AddAlbum.aspx");
+                Response.Redirect("~/MusicStore/AlbumList.aspx");
             }
             else //user is not found
             {

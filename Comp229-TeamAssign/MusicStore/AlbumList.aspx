@@ -5,7 +5,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
-                <asp:GridView ID="AlbumListGridView" runat="server" AllowPaging="True" PageSize="24" AutoGenerateColumns="False" DataKeyNames="AlbumId" DataSourceID="SqlDataSource1">
+                <asp:GridView ID="AlbumListGridView" runat="server" AllowPaging="True" PageSize="24" 
+                    AutoGenerateColumns="False" DataKeyNames="AlbumId" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-hover table-striped">
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                         <asp:BoundField DataField="AlbumId" HeaderText="AlbumId" InsertVisible="False" ReadOnly="True" SortExpression="AlbumId" />

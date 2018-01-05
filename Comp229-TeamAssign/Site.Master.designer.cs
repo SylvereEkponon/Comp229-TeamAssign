@@ -76,40 +76,13 @@ namespace Comp229_TeamAssign {
         protected global::System.Web.UI.WebControls.PlaceHolder MusicStorePlaceHolder;
         
         /// <summary>
-        /// menu control.
+        /// albums control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl menu;
-        
-        /// <summary>
-        /// students control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl students;
-        
-        /// <summary>
-        /// courses control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl courses;
-        
-        /// <summary>
-        /// departments control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl departments;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl albums;
         
         /// <summary>
         /// logout control.
