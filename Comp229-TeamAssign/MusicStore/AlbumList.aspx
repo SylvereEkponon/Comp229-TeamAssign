@@ -1,11 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AlbumList.aspx.cs" Inherits="Comp229_TeamAssign.MusicStore.AlbumList" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
-                <asp:GridView ID="AlbumListGridView" runat="server" AllowPaging="True" PageSize="24" 
+                <br />
+                <a href="/MusicStore/AddAlbum.aspx" class="btn btn-success btn-sm">
+                    <i class="fa fa-plus"></i>Add Album
+                </a>
+                <br />
+                <asp:GridView ID="AlbumListGridView" runat="server" AllowPaging="True" PageSize="24"
                     AutoGenerateColumns="False" DataKeyNames="AlbumId" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-hover table-striped">
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />

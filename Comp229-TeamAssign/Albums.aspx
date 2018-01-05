@@ -9,9 +9,7 @@
             <div class="col-md-offset-1 col-md-10">
                 <br />
                 <br />
-                <a href="/MusicStore/AddAlbum.aspx" class="btn btn-success btn-sm">
-                    <i class="fa fa-plus"></i>Add Album
-                </a>
+
 
                 <asp:ListView ID="AlbamDataList" runat="server" DataKeyNames="AlbumId" GroupItemCount="3" OnPagePropertiesChanging="AlbamDataList_PagePropertiesChanging">
                     <EmptyDataTemplate>
