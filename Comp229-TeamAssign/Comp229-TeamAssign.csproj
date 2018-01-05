@@ -132,6 +132,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="MusicStore\AddAlbum.aspx" />
+    <Content Include="MusicStore\AlbumList.aspx" />
     <Content Include="MusicStore\Order.aspx" />
     <Content Include="MusicStore\ShoppingCart.aspx" />
     <Content Include="MusicStore\UpdateOrder.aspx" />
@@ -235,6 +236,13 @@
     </Compile>
     <Compile Include="MusicStore\AddAlbum.aspx.designer.cs">
       <DependentUpon>AddAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MusicStore\AlbumList.aspx.cs">
+      <DependentUpon>AlbumList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MusicStore\AlbumList.aspx.designer.cs">
+      <DependentUpon>AlbumList.aspx</DependentUpon>
     </Compile>
     <Compile Include="MusicStore\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
