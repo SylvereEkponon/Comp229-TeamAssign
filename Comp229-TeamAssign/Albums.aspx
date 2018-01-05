@@ -49,9 +49,12 @@
                                     <td>
                                         <span>
                                             <b>Price: </b>$<%# Eval("Price") %></span><br />
-                                        <a href="#" class="btn btn-primary btn-group-lg">Add To Cart
+                                       <%-- <a href="#" class="btn btn-primary btn-group-lg">Add To Cart
                                                   
-                                        </a>
+                                        </a>--%>
+                                        <asp:HyperLink ID="hyper" runat="server" Text="More Details..." CssClass="btn btn-primary btn-group-lg" 
+                                            NavigateUrl='<%#"AlbumDetails.aspx?AlbumId=" + DataBinder.Eval(Container.DataItem,"AlbumId") %>' />
+                                       
                                     </td>
                                 </tr>
                             </table>

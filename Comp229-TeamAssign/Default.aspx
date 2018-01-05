@@ -55,7 +55,7 @@
         <br />
         <div class="row">
             <div class="col-md-offset-5 col-md-2">
-                <a href="Albums.aspx" class="btn btn-primary btn-group-lg">Load All Albums</a>
+                <a href="Albums.aspx" class="btn btn-primary btn-group-lg">See All Albums</a>
             </div>
         </div>
     </div>
