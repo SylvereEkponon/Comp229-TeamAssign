@@ -41,21 +41,25 @@ namespace Comp229_TeamAssign
         {
             switch (Page.Title)
             {
-                case "home":
+                case "Home":
                     home.Attributes.Add("class", "active");
-                    Page.Title = string.Format("Music Store :: Home :: {0:d}", DateTime.Now);
+                    Page.Title = string.Format("Music Store::Home ::");
                     break;
-                case "about":
+                case "AboutUs":
                     about.Attributes.Add("class", "active");
+                    Page.Title = string.Format("Music Store::AboutUs :: ");
                     break;
-                case "contact":
+                case "ContactUs":
                     contact.Attributes.Add("class", "active");
+                    Page.Title = string.Format("Music Store::ContactUs :: ");
                     break;
-                case "register":
+                case "Registration":
                     register.Attributes.Add("class", "active");
+                    Page.Title = string.Format("Music Store::Registration :: ");
                     break;
-                case "login":
+                case "Login":
                     login.Attributes.Add("class", "active");
+                    Page.Title = string.Format("Music Store::Login :: ");
                     break;
 
 

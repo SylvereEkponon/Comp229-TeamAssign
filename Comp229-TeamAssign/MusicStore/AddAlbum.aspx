@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddAlbum.aspx.cs" Inherits="Comp229_TeamAssign.MusicStore.AddAlbum" %>
+﻿<%@ Page Title="AddAlbum" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddAlbum.aspx.cs" Inherits="Comp229_TeamAssign.MusicStore.AddAlbum" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

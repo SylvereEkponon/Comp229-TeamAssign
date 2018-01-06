@@ -13,5 +13,10 @@ namespace Comp229_TeamAssign
         {
 
         }
+
+        protected void SendButton_Click(object sender, EventArgs e)
+        {
+            // Functionality will created in our next version
+        }
     }
 }
