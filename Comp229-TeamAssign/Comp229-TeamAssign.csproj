@@ -154,6 +154,7 @@
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Comp229-ProjDocumentation.docx" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.4.js" />
     <Content Include="Scripts\jquery-2.2.4.min.js" />
